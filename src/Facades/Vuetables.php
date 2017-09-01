@@ -5,7 +5,7 @@ namespace dubroquin\vuetables\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class vuetable.
+ * Class vuetables.
  *
  * @package dubroquin\vuetables\Facades
  * @author  Arjay Angeles <aqangeles@gmail.com>
