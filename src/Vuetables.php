@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
  * @package dubroquin\vuetables;
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
-class Vuetable
+class Vuetables
 {
     /**
      * vuetable request object.

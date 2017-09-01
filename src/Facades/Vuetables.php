@@ -19,6 +19,6 @@ class Vuetables extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Vuetables';
+        return 'vuetables';
     }
 }

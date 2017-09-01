@@ -67,9 +67,9 @@ class VuetablesServiceProvider extends ServiceProvider
             return $fractal;
         });
 
-        $this->app->alias('vuetable', Vuetable::class);
+        $this->app->alias('vuetable', Vuetables::class);
         $this->app->singleton('vuetable', function () {
-            return new vuetable(new Request(app('request')));
+            return new Vuetables(new Request(app('request')));
         });
 
         $this->registerAliases();
