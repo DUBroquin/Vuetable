@@ -92,7 +92,7 @@ class VuetablesServiceProvider extends ServiceProvider
     {
         if (class_exists('Illuminate\Foundation\AliasLoader')) {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Vuetable', \dubroquin\vuetables\Facades\Vuetable::class);
+            $loader->alias('Vuetable', \dubroquin\vuetables\Facades\Vuetables::class);
         }
     }
 
