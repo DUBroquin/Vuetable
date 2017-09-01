@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd37c779-f2be-44dd-9967-e34ec1de0bb9" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Facades/Vuetable.php" afterPath="$PROJECT_DIR$/src/Facades/Vuetables.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VuetablesServiceProvider.php" afterPath="$PROJECT_DIR$/src/VuetablesServiceProvider.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VuetablesServiceProvider.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VuetablesServiceProvider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/VuetablesServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="155">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vuetables.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Vuetables.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Facades/Vuetables.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -131,6 +131,7 @@
         <option value="$PROJECT_DIR$/UPGRADE.md" />
         <option value="$PROJECT_DIR$/src/Facades/Vuetable.php" />
         <option value="$PROJECT_DIR$/src/Facades/Vuetables.php" />
+        <option value="$PROJECT_DIR$/src/VuetablesServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -232,12 +233,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504277583126</updated>
-      <workItem from="1504277584329" duration="867000" />
+      <workItem from="1504277584329" duration="1044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="867000" />
+    <option name="totallyTimeSpent" value="1044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1058" extended-state="0" />
@@ -281,14 +282,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VuetablesServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -339,6 +332,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VuetablesServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>

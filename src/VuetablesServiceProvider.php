@@ -7,12 +7,12 @@ use League\Fractal\Manager;
 use League\Fractal\Serializer\DataArraySerializer;
 
 /**
- * Class vuetableServiceProvider.
+ * Class vuetablesServiceProvider.
  *
  * @package dubroquin\vuetables;
  * @author  Arjay Angeles <aqangeles@gmail.com>
  */
-class VuetableServiceProvider extends ServiceProvider
+class VuetablesServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
