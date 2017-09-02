@@ -593,7 +593,7 @@ abstract class BaseEngine implements DataTableEngineContract
             $data = $this->getProcessedData(true);
         }
 
-        if($this->request->has('sort')){
+        if(!is_null($this->request->sort)){
             $sorts = explode(',', $this->request->sort);
 
             foreach ($sorts as $sort) {
