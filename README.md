@@ -1,6 +1,6 @@
 # Laravel-datatable package for vuetable2
 
-This package is a fork of yajra/laravel-vuetable created by Arjay Angeles <aqangeles@gmail.com>
+This package is a fork of yajra/laravel-vuetables created by Arjay Angeles <aqangeles@gmail.com>
 
 ## Requirements
 - [PHP >= 5.6.4](http://php.net/)
@@ -18,26 +18,26 @@ This package is a fork of yajra/laravel-vuetable created by Arjay Angeles <aqang
  5.4.x    | 7.x
 
 ## Laravel 5.4 Upgrade Guide
-There are breaking changes since Laravel 5.4 and vuetable v7.0.
-If you are upgrading from v6.x to v7.x, please see [upgrade guide](https://yajrabox.com/docs/laravel-vuetable/7.0/upgrade).
+There are breaking changes since Laravel 5.4 and vuetables v7.0.
+If you are upgrading from v6.x to v7.x, please see [upgrade guide](https://yajrabox.com/docs/laravel-vuetables/7.0/upgrade).
 
 ## Quick Installation
 ```bash
-$ composer require yajra/laravel-vuetable-oracle:^7.5
+$ composer require yajra/laravel-vuetables-oracle:^7.5
 ```
 
 #### Service Provider
 `dubroquin\vuetables\vuetableServiceProvider::class`
 
 #### Facade
-`vuetable` facade is automatically registered as an alias for `dubroquin\vuetables\Facades\vuetable` class. 
+`vuetables` facade is automatically registered as an alias for `dubroquin\vuetables\Facades\vuetables` class. 
 
 #### Configuration and Assets
 ```bash
-$ php artisan vendor:publish --tag=vuetable
+$ php artisan vendor:publish --tag=vuetables
 ```
 
-And that's it! Start building out some awesome vuetable!
+And that's it! Start building out some awesome vuetables!
 
 ## Debugging Mode
 To enable debugging mode, just set `APP_DEBUG=true` and the package will include the queries and inputs used when processing the table.
@@ -52,7 +52,7 @@ It is advise to use [Homestead](https://laravel.com/docs/5.4/homestead) or [Vale
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/yajra/laravel-vuetable/blob/master/.github/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/yajra/laravel-vuetables/blob/master/.github/CONTRIBUTING.md) for details.
 
 ## Security
 
@@ -61,12 +61,12 @@ If you discover any security related issues, please email [aqangeles@gmail.com](
 ## Credits
 
 - [Arjay Angeles](https://github.com/yajra)
-- [bllim/laravel4-vuetable-package](https://github.com/bllim/laravel4-vuetable-package)
-- [All Contributors](https://github.com/yajra/laravel-vuetable/graphs/contributors)
+- [bllim/laravel4-vuetables-package](https://github.com/bllim/laravel4-vuetables-package)
+- [All Contributors](https://github.com/yajra/laravel-vuetables/graphs/contributors)
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/yajra/laravel-vuetable/blob/master/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/yajra/laravel-vuetables/blob/master/LICENSE.md) for more information.
 
 ## Buy me a coffee
-<a href='https://pledgie.com/campaigns/29515'><img alt='Click here to lend your support to: Laravel vuetable and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/29515.png?skin_name=chrome' border='0' ></a>
+<a href='https://pledgie.com/campaigns/29515'><img alt='Click here to lend your support to: Laravel vuetables and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/29515.png?skin_name=chrome' border='0' ></a>

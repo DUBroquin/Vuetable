@@ -90,7 +90,7 @@ class Helper
         }
 
         $empty_filesystem_instance = new Filesystem();
-        $blade                     = new BladeCompiler($empty_filesystem_instance, 'vuetable');
+        $blade                     = new BladeCompiler($empty_filesystem_instance, 'vuetables');
         $parsed_string             = $blade->compileString($str);
 
         ob_start() && extract($data, EXTR_SKIP);

@@ -96,7 +96,7 @@ class DataProcessor
     public function process($object = false)
     {
         $this->output = [];
-        $indexColumn  = Config::get('vuetable.index_column', 'DT_Row_Index');
+        $indexColumn  = Config::get('vuetables.index_column', 'DT_Row_Index');
 
         foreach ($this->results as $row) {
             $data  = Helper::convertToArray($row);

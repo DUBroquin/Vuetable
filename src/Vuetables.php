@@ -5,7 +5,7 @@ namespace dubroquin\vuetables;
 use Illuminate\Support\Collection;
 
 /**
- * Class vuetable.
+ * Class vuetables.
  *
  * @package dubroquin\vuetables;
  * @author  Arjay Angeles <aqangeles@gmail.com>
@@ -13,7 +13,7 @@ use Illuminate\Support\Collection;
 class Vuetables
 {
     /**
-     * vuetable request object.
+     * vuetables request object.
      *
      * @var \dubroquin\vuetables\Request
      */
@@ -27,7 +27,7 @@ class Vuetables
     protected $html;
 
     /**
-     * vuetable constructor.
+     * vuetables constructor.
      *
      * @param \dubroquin\vuetables\Request $request
      */
@@ -45,10 +45,10 @@ class Vuetables
      */
     public static function of($source)
     {
-        $vuetable = app('vuetable');
+        $vuetables = app('vuetables');
         $config     = app('config');
-        $engines    = $config->get('vuetable.engines');
-        $builders   = $config->get('vuetable.builders');
+        $engines    = $config->get('vuetables.engines');
+        $builders   = $config->get('vuetables.builders');
 
         if (is_array($source)) {
             $source = new Collection($source);
@@ -58,7 +58,7 @@ class Vuetables
             if ($source instanceof $class) {
                 $class = $engines[$engine];
 
-                return new $class($source, $vuetable->getRequest());
+                return new $class($source, $vuetables->getRequest());
             }
         }
 
@@ -76,7 +76,7 @@ class Vuetables
     }
 
     /**
-     * vuetable using Query Builder.
+     * vuetables using Query Builder.
      *
      * @param \Illuminate\Database\Query\Builder|mixed $builder
      * @return \dubroquin\vuetables\Engines\QueryBuilderEngine
@@ -87,7 +87,7 @@ class Vuetables
     }
 
     /**
-     * vuetable using Eloquent Builder.
+     * vuetables using Eloquent Builder.
      *
      * @param \Illuminate\Database\Eloquent\Builder|mixed $builder
      * @return \dubroquin\vuetables\Engines\EloquentEngine
@@ -98,7 +98,7 @@ class Vuetables
     }
 
     /**
-     * vuetable using Collection.
+     * vuetables using Collection.
      *
      * @param \Illuminate\Support\Collection|mixed $collection
      * @return \dubroquin\vuetables\Engines\CollectionEngine
@@ -121,9 +121,9 @@ class Vuetables
     public function getHtmlBuilder()
     {
         if (! class_exists('\dubroquin\vuetables\Html\Builder')) {
-            throw new \Exception('Please install yajra/laravel-vuetable-html to be able to use this function.');
+            throw new \Exception('Please install yajra/laravel-vuetables-html to be able to use this function.');
         }
 
-        return $this->html ?: $this->html = app('vuetable.html');
+        return $this->html ?: $this->html = app('vuetables.html');
     }
 }

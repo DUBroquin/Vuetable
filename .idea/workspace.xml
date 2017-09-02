@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd37c779-f2be-44dd-9967-e34ec1de0bb9" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Vuetable.php" afterPath="$PROJECT_DIR$/src/Vuetables.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/vuetables.php" afterPath="$PROJECT_DIR$/src/Vuetables.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Facades/Vuetables.php" afterPath="$PROJECT_DIR$/src/Facades/Vuetables.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VuetablesServiceProvider.php" afterPath="$PROJECT_DIR$/src/VuetablesServiceProvider.php" />
     </list>
@@ -87,8 +87,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vuetable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/vuetable.php">
+      <file leaf-file-name="vuetables.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/vuetables.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1627">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -121,8 +121,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dubroquin\vuetable</find>
-      <find>Vuetable</find>
+      <find>dubroquin\vuetables</find>
+      <find>vuetables</find>
       <find>dubroquin\vuetables</find>
       <find>dubroquin\vuetables\;</find>
       <find>datatables</find>
@@ -139,9 +139,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/Vuetable.php" />
+        <option value="$PROJECT_DIR$/src/vuetables.php" />
         <option value="$PROJECT_DIR$/UPGRADE.md" />
-        <option value="$PROJECT_DIR$/src/Facades/Vuetable.php" />
+        <option value="$PROJECT_DIR$/src/Facades/vuetables.php" />
         <option value="$PROJECT_DIR$/src/VuetablesServiceProvider.php" />
         <option value="$PROJECT_DIR$/src/Facades/Vuetables.php" />
       </list>
@@ -346,7 +346,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/vuetable.php">
+    <entry file="file://$PROJECT_DIR$/src/config/vuetables.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1627">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

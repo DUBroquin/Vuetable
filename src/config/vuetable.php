@@ -2,7 +2,7 @@
 
 return [
     /**
-     * vuetable search options.
+     * vuetables search options.
      */
     'search'         => [
         /**
@@ -25,12 +25,12 @@ return [
     ],
 
     /**
-     * vuetable internal index id response column name.
+     * vuetables internal index id response column name.
      */
     'index_column'   => 'DT_Row_Index',
 
     /**
-     * vuetable fractal configurations.
+     * vuetables fractal configurations.
      */
     'fractal'        => [
         /**
@@ -45,8 +45,8 @@ return [
     ],
 
     /**
-     * vuetable list of available engines.
-     * This is where you can register your custom vuetable engine.
+     * vuetables list of available engines.
+     * This is where you can register your custom vuetables engine.
      */
     'engines'        => [
         'eloquent'   => dubroquin\vuetables\Engines\EloquentEngine::class,
@@ -55,7 +55,7 @@ return [
     ],
 
     /**
-     * vuetable accepted builder to engine mapping.
+     * vuetables accepted builder to engine mapping.
      */
     'builders'       => [
         Illuminate\Database\Eloquent\Relations\Relation::class => 'eloquent',

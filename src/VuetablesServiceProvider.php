@@ -28,16 +28,16 @@ class VuetablesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->mergeConfigFrom(__DIR__ . '/config/vuetable.php', 'vuetable');
+        $this->mergeConfigFrom(__DIR__ . '/config/vuetables.php', 'vuetables');
 
         $this->publishes([
-            __DIR__ . '/config/vuetable.php' => config_path('vuetable.php'),
-        ], 'vuetable');
+            __DIR__ . '/config/vuetables.php' => config_path('vuetables.php'),
+        ], 'vuetables');
 
         // Publish Vue.js files
         $this->publishes([
             __DIR__.'/resources/' => resource_path('/assets/js/components/commons')
-        ], 'vuetable');
+        ], 'vuetables');
     }
 
     /**
@@ -51,24 +51,24 @@ class VuetablesServiceProvider extends ServiceProvider
             require_once 'fallback.php';
         }
 
-        $this->app->singleton('vuetable.fractal', function () {
+        $this->app->singleton('vuetables.fractal', function () {
             $fractal = new Manager;
             $config  = $this->app['config'];
             $request = $this->app['request'];
 
-            $includesKey = $config->get('vuetable.fractal.includes', 'include');
+            $includesKey = $config->get('vuetables.fractal.includes', 'include');
             if ($request->get($includesKey)) {
                 $fractal->parseIncludes($request->get($includesKey));
             }
 
-            $serializer = $config->get('vuetable.fractal.serializer', DataArraySerializer::class);
+            $serializer = $config->get('vuetables.fractal.serializer', DataArraySerializer::class);
             $fractal->setSerializer(new $serializer);
 
             return $fractal;
         });
 
-        $this->app->alias('vuetable', Vuetables::class);
-        $this->app->singleton('vuetable', function () {
+        $this->app->alias('vuetables', Vuetables::class);
+        $this->app->singleton('vuetables', function () {
             return new Vuetables(new Request(app('request')));
         });
 
@@ -103,6 +103,6 @@ class VuetablesServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['vuetable', 'vuetable.fractal'];
+        return ['vuetables', 'vuetables.fractal'];
     }
 }

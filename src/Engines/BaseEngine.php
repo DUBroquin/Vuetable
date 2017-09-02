@@ -20,7 +20,7 @@ use Illuminate\Pagination\Paginator;
 abstract class BaseEngine implements DataTableEngineContract
 {
     /**
-     * vuetable Request object.
+     * vuetables Request object.
      *
      * @var \dubroquin\vuetables\Request
      */
@@ -516,7 +516,7 @@ abstract class BaseEngine implements DataTableEngineContract
 
             return $this->render($mDataSupport);
         } catch (\Exception $exception) {
-            $error = config('vuetable.error');
+            $error = config('vuetables.error');
             if ($error === 'throw') {
                 throw new Exception($exception->getMessage(), $code = 0, $exception);
             }
@@ -729,7 +729,7 @@ abstract class BaseEngine implements DataTableEngineContract
      */
     public function isCaseInsensitive()
     {
-        return !!config('vuetable.search.case_insensitive', false);
+        return !!config('vuetables.search.case_insensitive', false);
     }
 
     /**
@@ -799,7 +799,7 @@ abstract class BaseEngine implements DataTableEngineContract
      */
     public function smart($bool = true)
     {
-        config(['vuetable.search.smart' => $bool]);
+        config(['vuetables.search.smart' => $bool]);
 
         return $this;
     }
@@ -840,7 +840,7 @@ abstract class BaseEngine implements DataTableEngineContract
     }
 
     /**
-     * Set vuetable to do ordering with NULLS LAST option.
+     * Set vuetables to do ordering with NULLS LAST option.
      *
      * @return $this
      */
@@ -874,13 +874,13 @@ abstract class BaseEngine implements DataTableEngineContract
     }
 
     /**
-     * Check if vuetable uses smart search.
+     * Check if vuetables uses smart search.
      *
      * @return bool
      */
     public function isSmartSearch()
     {
-        return !!config('vuetable.search.smart', true);
+        return !!config('vuetables.search.smart', true);
     }
 
     /**
@@ -890,7 +890,7 @@ abstract class BaseEngine implements DataTableEngineContract
      */
     public function isWildcard()
     {
-        return !!config('vuetable.search.use_wildcards', false);
+        return !!config('vuetables.search.use_wildcards', false);
     }
 
     /**
@@ -963,7 +963,7 @@ abstract class BaseEngine implements DataTableEngineContract
     {
         $column = $this->request->columnName($index);
 
-        // vuetable is using make(false)
+        // vuetables is using make(false)
         if (is_numeric($column)) {
             $column = $this->getColumnNameByIndex($index);
         }

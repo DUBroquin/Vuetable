@@ -1,6 +1,6 @@
 {
     "name": "dubroquin/vuetables",
-    "description": "Fork of yajra/laravel-vuetable-oracle to use it with vuetable2",
+    "description": "Fork of yajra/laravel-vuetables-oracle to use it with vuetable2",
     "type": "library",
     "require": {
         "php": ">=5.6.4",

@@ -753,7 +753,7 @@ class QueryBuilderEngine extends BaseEngine
      */
     protected function getNullsLastSql($column, $direction)
     {
-        $sql = Config::get('vuetable.nulls_last_sql', '%s %s NULLS LAST');
+        $sql = Config::get('vuetables.nulls_last_sql', '%s %s NULLS LAST');
 
         return sprintf($sql, $column, $direction);
     }

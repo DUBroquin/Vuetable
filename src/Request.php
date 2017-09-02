@@ -76,14 +76,14 @@ class Request
     public function checkLegacyCode()
     {
         if (! $this->request->input('draw') && $this->request->input('sEcho')) {
-            throw new Exception('vuetable legacy code is not supported! Please use vuetable 1.10++ coding convention.');
+            throw new Exception('vuetables legacy code is not supported! Please use vuetables 1.10++ coding convention.');
         } elseif (! $this->request->input('draw') && ! $this->request->input('columns')) {
             throw new Exception('Insufficient parameters');
         }
     }
 
     /**
-     * Check if vuetable is searchable.
+     * Check if vuetables is searchable.
      *
      * @return bool
      */
@@ -93,7 +93,7 @@ class Request
     }
 
     /**
-     * Check if vuetable must uses regular expressions
+     * Check if vuetables must uses regular expressions
      *
      * @param integer $index
      * @return string
@@ -127,7 +127,7 @@ class Request
     }
 
     /**
-     * Check if vuetable ordering is enabled.
+     * Check if vuetables ordering is enabled.
      *
      * @return bool
      */
@@ -215,7 +215,7 @@ class Request
     }
 
     /**
-     * Check if vuetable allow pagination.
+     * Check if vuetables allow pagination.
      *
      * @return bool
      */

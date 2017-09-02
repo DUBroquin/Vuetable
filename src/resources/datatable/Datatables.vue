@@ -1,6 +1,6 @@
 <script>
     // Import basics
-    import Vuetable from 'vuetable-2/src/components/Vuetable.vue'
+    import vuetables from 'vuetables-2/src/components/vuetables.vue'
     import VueEvents from 'vue-events'
     import TableExport from 'tableexport'
     import PrintHtmlElement from 'print-html-element'
@@ -32,7 +32,7 @@
             this.$events.$on('filter-set', eventData => this.onFilterSet(eventData))
         },
         components: {
-            Vuetable,
+            vuetables,
             FilterBar,
             Pagination,
         },
@@ -93,7 +93,7 @@
         },
         data(){
             return {
-                vuetable: {
+                vuetables: {
                     tableClass: 'table table-striped table-bordered table-hover',
                     loadingClass: 'loading',
                     ascendingIcon: 'fa fa-sort-asc',
@@ -101,7 +101,7 @@
                     handleIcon: 'fa fa-bart',
                     pagination: {
                         infoClass: 'pull-left',
-                        wrapperClass: 'vuetable-pagination pull-right',
+                        wrapperClass: 'vuetables-pagination pull-right',
                         activeClass: 'btn btn-primary',
                         disabledClass: 'disabled',
                         pageClass: 'btn btn-default',
@@ -137,7 +137,7 @@
             },
             renderVuetable(h) {
                 return h(
-                    'vuetable',
+                    'vuetables',
                     {
                         ref: this.id,
                         props: {
@@ -145,14 +145,14 @@
                             name: this.id,
                             apiUrl: this.api,
                             fields: this.columns,
-                            css: this.vuetable,
+                            css: this.vuetables,
                             paginationPath: "",
                             perPage: this.perPage,
                             appendParams: this.params,
                             detailRowComponent:"detail"
                         },
                         on: {
-                            'vuetable:pagination-data': this.onPaginationData,
+                            'vuetables:pagination-data': this.onPaginationData,
                         },
                         scopedSlots: this.$vnode.data.scopedSlots
                     }
@@ -165,7 +165,7 @@
                         ref: 'pagination',
                         props: {
                             showPagination: this.showPagination,
-                            css: this.vuetable.pagination,
+                            css: this.vuetables.pagination,
                         },
                         on: {},
                         scopedSlots: this.$vnode.data.scopedSlots
