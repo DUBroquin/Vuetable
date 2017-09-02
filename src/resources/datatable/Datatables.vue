@@ -1,6 +1,6 @@
 <script>
     // Import basics
-    import vuetables from 'vuetables-2/src/components/vuetables.vue'
+    import vuetables from 'vuetable-2/src/components/Vuetable.vue'
     import VueEvents from 'vue-events'
     import TableExport from 'tableexport'
     import PrintHtmlElement from 'print-html-element'

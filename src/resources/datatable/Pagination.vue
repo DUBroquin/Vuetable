@@ -15,8 +15,8 @@
 
 <script>
     // Import components
-    import VuetablePagination from 'vuetables-2/src/components/VuetablePagination'
-    import VuetablePaginationInfo from 'vuetables-2/src/components/VuetablePaginationInfo'
+    import VuetablePagination from 'vuetable-2/src/components/VuetablePagination'
+    import VuetablePaginationInfo from 'vuetable-2/src/components/VuetablePaginationInfo'
 
     export default{
         components: {
