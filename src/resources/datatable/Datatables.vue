@@ -164,7 +164,7 @@
                             subColumns: this.subColumns
                         },
                         on: {
-                            'vuetables:pagination-data': this.onPaginationData,
+                            'vuetable:pagination-data': this.onPaginationData,
                         },
                         scopedSlots: this.$vnode.data.scopedSlots
                     }
