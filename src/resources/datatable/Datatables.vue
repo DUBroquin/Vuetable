@@ -48,6 +48,16 @@
                 required: true,
             },
 
+            // Header
+            hasComplexHeader:{
+                type:Boolean,
+                default: () => {return false}
+            },
+            subColumns:{
+                type:Array,
+                default: () => {return []}
+            },
+
             // Options
             perPage:{type:Number, default:function(){return 10}},
 
@@ -149,7 +159,9 @@
                             paginationPath: "",
                             perPage: this.perPage,
                             appendParams: this.params,
-                            detailRowComponent:"detail"
+                            detailRowComponent:"detail",
+                            hasComplexHeader: this.hasComplexHeader,
+                            subColumns: this.subColumns
                         },
                         on: {
                             'vuetables:pagination-data': this.onPaginationData,
