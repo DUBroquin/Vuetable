@@ -49,10 +49,6 @@
             },
 
             // Header
-            hasComplexHeader:{
-                type:Boolean,
-                default: () => {return false}
-            },
             subColumns:{
                 type:Array,
                 default: () => {return []}

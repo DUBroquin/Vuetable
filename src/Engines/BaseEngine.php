@@ -615,7 +615,7 @@ abstract class BaseEngine implements DataTableEngineContract
             $final->push($sort);
         }
 
-        $perPage = $this->request->has('per_page') ? (int)$this->request->per_page : null;
+        $perPage = $this->request->params['per_page'];
         $pagination = new LengthAwarePaginator(
             $final->forPage(Paginator::resolveCurrentPage(), $perPage),
             $final->count(), $perPage,
